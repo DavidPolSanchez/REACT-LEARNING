@@ -1,5 +1,9 @@
 import logo from './logo.svg';
 import './App.css';
+import React from 'react';
+
+
+// Resto de tu código que utiliza JSX
 
 function App() {
   return (
