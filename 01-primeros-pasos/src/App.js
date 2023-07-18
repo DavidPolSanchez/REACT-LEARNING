@@ -3,7 +3,9 @@ import './App.css';
 import MiCompomente from './MiComponente';
 import SegundoComponente  from './SegundoComponente';
 import TercerComponente from './TercerComponente';
+import { EventosComponente } from './EventosComponente';
 import React from 'react';
+
 
 // Resto de tu código que utiliza JSX
 
@@ -23,6 +25,7 @@ function App() {
          Bienvenido al master de react
         </p>
        <div className='componentes'>
+        <EventosComponente/>
         {/* Como poner texto de log */}
         <TercerComponente nombre="David Pol" apellidos="Sanchez Martos" ficha={ficha_medica}/>  
         <hr />        
