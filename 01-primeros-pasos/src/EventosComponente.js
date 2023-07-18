@@ -46,6 +46,7 @@ export const EventosComponente = () => {
             Pasa por encima 
           </div>
         </p>
+        
         <p>
           {/*Eventos OnFocus/blur*/}
           <input type="text" 
