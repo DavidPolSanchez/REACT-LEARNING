@@ -25,13 +25,14 @@ export const MiPrimerEstado = () => {
   return (
     <div>
       <h3>Componente MiPrimerEstado</h3>
-      <strong> { nombre } </strong>
-      <p>
+      <strong className={nombre.length >= 4? 'label':'travel'}>
+         { nombre } 
+         </strong>
+      
         <button onClick={e => cambiarNombre(e,"Francisco")}>cambiar el nombre </button>  
-      </p>
-      <p>
+     
         <input type="text" onChange={ e => cambiarNombre(e, e.target.value)} placeholder="escribe un nombre"/>
-      </p>
+     
     </div>
 
 
