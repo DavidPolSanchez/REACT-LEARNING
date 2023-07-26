@@ -1,0 +1,9 @@
+1.Crear un componente(hecho)
+2. Recibir una prop con el año actual(hecho) 
+3.Usar funciones para sacar el año actual
+4. usar estados y eventos para tener dos botones 
+    - Pasar al proximo año
+    - ir al año anterior
+    - mostrar en todo momento el año por pantalla 
+5. Validar que el año sea un numero y sea requerido(prop)
+6.Cambiar el año mediante un imput de texto y que se cambie dinamicamente
