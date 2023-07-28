@@ -1,14 +1,15 @@
 
 import React, { useEffect, useState} from 'react'
-
+import { AvisoComponent } from './AvisoComponent';
 export const PruebasComponent = () => {
 
     const [usuario, setUsuario] = useState("federico rico");
     const [fecha, setFecha] = useState("10-11-1998");
+    const [contador, setContador] = useState(0);
 
     const modusuario = e => {
       setUsuario(e.target.value);
-      console.log("Ha habido un cambio en usuario ");
+      
     }
     const cambiarFecha = e => {
       setFecha(Date.now());
@@ -24,6 +25,8 @@ export const PruebasComponent = () => {
 
     useEffect(()=> {
       console.log("Has cambiado el estado de usuario");
+      setContador(contador+1)
+      console.log(`contador:${contador}`)
     },[usuario]);
 
 
@@ -31,12 +34,15 @@ export const PruebasComponent = () => {
   return (
     <div>
         <h1>El Efecto -Hooks UseEffect</h1>
-        <strong>{usuario}</strong>
-        <strong>{fecha}</strong>
+        <strong className='label'>{usuario}</strong>
+        <strong className={contador<10?'travel':'label'}>{fecha}</strong>
         <form>
             <input  type="text" onChange={modusuario} placeholder="cambia el nombre" />
         </form>
         <button onClick={cambiarFecha}>cambiar fecha </button>
+
+
+        {usuario == "DAVID" && <AvisoComponent/>}
     </div>
   )
 }

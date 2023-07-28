@@ -36,3 +36,15 @@
     transform: rotate(360deg);
   }
 }
+.label {
+  background-color: lightblue; 
+  border-radius:5px;
+  padding: 5px;
+  color:#444;
+}
+.travel {
+  background-color: green; 
+  border-radius:5px;
+  padding: 5px;
+  color:#555;
+}
